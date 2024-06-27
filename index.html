@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Registro</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <p class="title-nav">EBAC</p>
+    </nav>
+
+    <p class="subtitle">Registro de nuevos alumnos de EBAC</p>
+
+    <button id="add-button">Agregar</button>
+    <button id="consult-button">Consultar</button>
+    <button id="eliminate-button">Eliminar</button>
+
+    <form>
+        <div id= "content-form-agregaralumnos">
+            <input type="text" name="name-user" placeholder="Nombre del Alumno" id="name-input"> 
+            <input type="text" name="age-user" placeholder="Edad del Alumno" id="age-input"> 
+            <input type="text" name="locality-user" placeholder="Localidad del Alumno" id="locality-input"> 
+            <input type="text" name="course-user" placeholder="Curso" id="course-input"> 
+            <input type="text" name="email-user" placeholder="Email del Alumno" id="email-input">  
+     
+            <button type="submit" id="EnviarButton">Enviar</button>
+        </div>
+
+        <div id="content-form-consultar">
+            <table>
+                <caption id="captionTable">Registro</caption>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Locality</th>
+                    <th>Course</th>
+                    <th>Email</th>
+                </tr>
+
+                <tbody id="TableAlumnos">
+                </tbody>           
+            </table>
+        </div>
+    </form>
+
+    <input type="checkbox" name="Si">
+
+    <script src="app.js"></script>
+</body>
+</html>
